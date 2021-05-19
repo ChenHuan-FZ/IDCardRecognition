@@ -12,7 +12,7 @@
 
 using namespace std;
 
-#define CONTENT_BUFFER_MAX_LEN      1024
+#define CONTENT_BUFFER_MAX_LEN      (1024 * 8)
 #define CONTENT_CUTOUT_LEN          17
 #define CONTENT_CHECK_PARITY_LEN    17
 #define IDCARD_NUMBER_LEN           18
@@ -278,7 +278,7 @@ int CIDCardRecognition::praseFile(const string &strFileName)
 	    return -1;
 	}
 
-	ifstream infile(strFileName);
+	ifstream infile(strFileName, ios::in|ios::binary);
     if (!infile.is_open()) {
 		cout << "Open file failure " << strFileName << endl;
 		return -2;
