@@ -1,0 +1,6 @@
+﻿  IDCardRecognition.cpp
+c:\users\win10\source\repos\idcardrecognition\idcardrecognition\idcardrecognition.cpp(294): warning C4244: “=”: 从“std::streamsize”转换到“int”，可能丢失数据
+  Main.cpp
+  Utils.cpp
+  正在生成代码...
+  IDCardRecognition.vcxproj -> C:\Users\WIN10\source\repos\IDCardRecognition\Debug\IDCardRecognition.exe
